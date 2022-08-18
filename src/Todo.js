@@ -1,5 +1,5 @@
-import React from 'react';
-import { ACTIONS } from './TodoReducer';
+import React from "react";
+import { ACTIONS } from "./TodoReducer";
 
 export default function Todo({ todo, dispatch }) {
   function toggleTodo() {
@@ -11,7 +11,7 @@ export default function Todo({ todo, dispatch }) {
   }
 
   return (
-    <div className={`todo-item${todo.completed ? '--completed' : ''}`}>
+    <div className={`todo-item${todo.completed ? "--completed" : ""}`}>
       <span className="todo-item__name">{todo.name}</span>
       <button className="todo-item__toggle" onClick={toggleTodo}>
         Toggle
