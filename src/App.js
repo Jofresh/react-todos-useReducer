@@ -1,17 +1,15 @@
-import React, { useState, useReducer } from 'react';
-import Todo from './Todo';
-import reducer, { ACTIONS } from './TodoReducer';
-
-import './style.css';
+import { useState, useReducer } from "react";
+import Todo from "./Todo";
+import reducer, { ACTIONS } from "./TodoReducer";
 
 export default function App() {
   const [todos, dispatch] = useReducer(reducer, []);
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
     addTodo();
-    setName('');
+    setName("");
   }
 
   function addTodo() {
