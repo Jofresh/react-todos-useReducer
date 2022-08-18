@@ -1,12 +1,12 @@
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from "uuid";
 
 export const ACTIONS = {
-  ADD_TODO: 'add-todo',
-  TOGGLE_TODO: 'toggle-todo',
-  DELETE_TODO: 'delete-todo',
+  ADD_TODO: "add-todo",
+  TOGGLE_TODO: "toggle-todo",
+  DELETE_TODO: "delete-todo",
 };
 
-// state should be named `todos`
+// `state` arg should be called `todos`
 // action : { type, payload: { <args> }}
 export default function reducer(state, action) {
   switch (action.type) {
